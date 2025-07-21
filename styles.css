@@ -736,6 +736,93 @@ section {
     min-height: 120px;
 }
 
+/* Free Meeting Section */
+.free-meeting {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.free-meeting h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.free-meeting .highlight {
+    color: #ffd700;
+    font-weight: 800;
+}
+
+.free-meeting p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.meeting-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.benefit-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-item i {
+    font-size: 2.5rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.benefit-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.benefit-item p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.free-meeting .btn-primary {
+    background: #ffd700;
+    color: #333;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.free-meeting .btn-primary:hover {
+    background: #ffed4e;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+}
+
 /* Footer */
 .footer {
     background: #333;
@@ -887,6 +974,19 @@ section {
         gap: 2rem;
     }
 
+    .free-meeting h2 {
+        font-size: 2rem;
+    }
+
+    .meeting-benefits {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .benefit-item {
+        padding: 1.5rem;
+    }
+
     .footer-content {
         flex-direction: column;
         text-align: center;
@@ -908,6 +1008,22 @@ section {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .free-meeting h2 {
+        font-size: 1.8rem;
+    }
+
+    .free-meeting p {
+        font-size: 1rem;
+    }
+
+    .benefit-item {
+        padding: 1rem;
+    }
+
+    .benefit-item h3 {
+        font-size: 1.1rem;
     }
 }
 
